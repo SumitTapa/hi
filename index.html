@@ -626,11 +626,40 @@
             </article>
 
 
-            <footer style="margin-top: 40px; text-align: center; padding: 20px 0; border-top: 1px solid var(--jet);">
-                <p style="color: var(--light-gray-70); font-size: var(--fs-8); font-style: italic; opacity: 0.7;">
-                    <ion-icon name="construct-outline" style="vertical-align: middle; margin-right: 6px;"></ion-icon>
-                    Portfolio under building, updates pending
+            <footer
+                style="margin-top: 50px; text-align: center; padding: 40px 20px; border-top: 1px solid var(--jet); background: linear-gradient(to bottom, transparent, rgba(255, 219, 112, 0.03)); border-radius: 0 0 20px 20px;">
+                <div style="display: inline-block; position: relative; margin-bottom: 15px;">
+                    <ion-icon name="flask-outline"
+                        style="font-size: 28px; color: var(--orange-yellow-crayola); animation: pulse 2s infinite ease-in-out;"></ion-icon>
+                </div>
+                <h4
+                    style="color: var(--white-1); font-size: var(--fs-6); font-weight: var(--fw-600); margin-bottom: 8px; letter-spacing: 1px; text-transform: uppercase;">
+                    Currently Training the Next Iteration
+                </h4>
+                <p
+                    style="color: var(--light-gray-70); font-size: var(--fs-8); font-style: italic; opacity: 0.8; max-width: 300px; margin: 0 auto; line-height: 1.5;">
+                    Something big is brewing in the lab... Are you ready for the next breakthrough? Stay tuned.
                 </p>
+
+                <style>
+                    @keyframes pulse {
+                        0% {
+                            transform: scale(1);
+                            opacity: 0.8;
+                        }
+
+                        50% {
+                            transform: scale(1.1);
+                            opacity: 1;
+                            filter: drop-shadow(0 0 8px var(--orange-yellow-crayola));
+                        }
+
+                        100% {
+                            transform: scale(1);
+                            opacity: 0.8;
+                        }
+                    }
+                </style>
             </footer>
 
         </div>
