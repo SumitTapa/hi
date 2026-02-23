@@ -477,32 +477,35 @@ main {
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 18px;
+  font-size: 24px;
   transition: var(--transition-1);
 }
 
 .social-item .social-link:hover {
   color: var(--orange-yellow-crayola);
-  filter: drop-shadow(0 0 10px var(--orange-yellow-crayola));
-  transform: translateY(-2px);
+  filter: drop-shadow(0 0 12px var(--orange-yellow-crayola));
+  transform: translateY(-3px) scale(1.15);
 }
 
-/* Permanent subtle glow to attract attention */
+/* Enhanced permanent pulsing with scale and intense glow */
 .social-item .social-link ion-icon {
-  animation: subtleGlow 3s infinite ease-in-out;
+  animation: powerfulPulse 2.5s infinite ease-in-out;
 }
 
-@keyframes subtleGlow {
+@keyframes powerfulPulse {
   0% {
     filter: drop-shadow(0 0 2px rgba(255, 219, 112, 0.2));
+    transform: scale(1);
   }
 
   50% {
-    filter: drop-shadow(0 0 8px rgba(255, 219, 112, 0.5));
+    filter: drop-shadow(0 0 15px rgba(255, 219, 112, 0.9));
+    transform: scale(1.2);
   }
 
   100% {
     filter: drop-shadow(0 0 2px rgba(255, 219, 112, 0.2));
+    transform: scale(1);
   }
 }
 
